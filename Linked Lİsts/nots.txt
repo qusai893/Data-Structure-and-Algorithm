@@ -1,0 +1,29 @@
+Linked List nedir?
+
+Diziler gibi elemanlar yan yana tutulmaz.
+
+Her eleman (node), kendi verisini ve bir sonraki elemanın adresini tutar.
+
+Yani: data + next pointer
+
+RAM'de nasıl tutulur?
+
+Node’lar RAM’de rastgele farklı adreslerde olabilir.
+
+Ama her node içinde bir sonraki node’un RAM adresi saklanır.
+
+Böylece sanki zincir gibi bağlıymış gibi okunur.
+
+Çalışma mantığı
+
+Başlangıç noktası: head (ilk node’un adresi)
+
+Head → next → next → ... şeklinde ipe dizilmiş gibi gezilir
+
+Yeni eleman eklemek: sadece adres bağlamak yeterli, eleman kaydırmaya gerek yok (array’den farkı)
+
+Dezavantaj: 5. elemana gitmek için tek tek saymak zorundayız (random access yok)
+
+Özet 1 cümle
+
+Linked List = RAM’de dağılmış elemanların birbirine adresle zincir şeklinde bağlanmış hali.
